@@ -7,7 +7,6 @@ public class StateManager : MonoBehaviour
     public static States.GameState currentGameState;
     public static States.BallMovementState currentBallMovementState;
 
-
     #region Subscribe and Unsubscribe to events
     private void OnEnable()
     {
