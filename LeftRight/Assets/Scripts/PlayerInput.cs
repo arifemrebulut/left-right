@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && StateManager.currentGameState == States.GameState.OnPlay)
+        {
+            if (StateManager.currentBallMovementState == States.BallMovementState.Patrol)
+            {
+                EventBroker.CallOnTapInPlay(States.BallMovementState.Left);
+            }
+            else if (StateManager.currentBallMovementState == States.BallMovementState.Left)
+            {
+                EventBroker.CallOnTapInPlay(States.BallMovementState.Right);
+            }
+            else if (StateManager.currentBallMovementState == States.BallMovementState.Right)
+            {
+                EventBroker.CallOnTapInPlay(States.BallMovementState.Left);
+            }
+        }
     }
 }
