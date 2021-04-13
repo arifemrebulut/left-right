@@ -965,6 +965,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4561215497804829335, guid: 5e0b566ababe2c14fa60108aab402a14, type: 3}
   m_PrefabInstance: {fileID: 4561215498876882776}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1184387062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4561215497827795118, guid: 5e0b566ababe2c14fa60108aab402a14, type: 3}
+  m_PrefabInstance: {fileID: 4561215498876882776}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1217908931
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,6 +1883,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4561215497804829323, guid: 5e0b566ababe2c14fa60108aab402a14, type: 3}
+      propertyPath: playerBody
+      value: 
+      objectReference: {fileID: 1184387062}
     - target: {fileID: 4561215497804829324, guid: 5e0b566ababe2c14fa60108aab402a14, type: 3}
       propertyPath: playerDeathParticleEffect
       value: 
