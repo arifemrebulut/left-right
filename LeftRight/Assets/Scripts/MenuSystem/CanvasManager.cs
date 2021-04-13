@@ -13,6 +13,8 @@ public class CanvasManager : MonoBehaviour
         menuControllerList = GetComponentsInChildren<MenuController>().ToList();
 
         menuControllerList.ForEach(x => x.gameObject.SetActive(false));
+
+        SwitchMenu(MenuType.MainMenu);
     }
 
     public void SwitchMenu(MenuType _menuType)
@@ -26,6 +28,8 @@ public class CanvasManager : MonoBehaviour
 
         if (desiredMenu != null)
         {
+            desiredMenu.gameObject.SetActive(true);
+
             lastActiveMenu = desiredMenu;
         }
         else
