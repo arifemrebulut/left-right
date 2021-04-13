@@ -10,15 +10,15 @@ public class PlayerInput : MonoBehaviour
         {
             if (StateManager.currentBallMovementState == States.BallMovementState.Patrol)
             {
-                EventBroker.CallOnTapInPlay(States.BallMovementState.Left);
+                StateManager.currentBallMovementState = States.BallMovementState.Left;
             }
             else if (StateManager.currentBallMovementState == States.BallMovementState.Left)
             {
-                EventBroker.CallOnTapInPlay(States.BallMovementState.Right);
+                StateManager.currentBallMovementState = States.BallMovementState.Right;
             }
             else if (StateManager.currentBallMovementState == States.BallMovementState.Right)
             {
-                EventBroker.CallOnTapInPlay(States.BallMovementState.Left);
+                StateManager.currentBallMovementState = States.BallMovementState.Left;
             }
         }
     }
