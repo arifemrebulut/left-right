@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class StateManager : MonoBehaviour
 {
-    public static States.GameState currentGameState { get; private set; }
-    public static States.BallMovementState currentBallMovementState { get; private set; }
+    public static States.GameState currentGameState;
+    public static States.BallMovementState currentBallMovementState;
 
 
     #region Subscribe and Unsubscribe to events
@@ -19,11 +19,6 @@ public class StateManager : MonoBehaviour
         EventBroker.OnTapInPlay -= ChangeBallMovementState;
     }
     #endregion
-
-    public void ChangeGameState(States.GameState desiredGameState)
-    {
-        currentGameState = desiredGameState;
-    }
 
     private void ChangeBallMovementState(States.BallMovementState desiredBallMovementState)
     {
