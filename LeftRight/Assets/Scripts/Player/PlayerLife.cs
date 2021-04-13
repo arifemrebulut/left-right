@@ -8,7 +8,14 @@ public class PlayerLife : MonoBehaviour, IDieable
     {
         DisablePlayerBody();
 
+        ChangeGameStateToGameOver();
+
         EventBroker.CallOnPlayerDie();
+    }
+
+    private void ChangeGameStateToGameOver()
+    {
+        States.currentGameState = States.GameState.OnGameOver;
     }
 
     private void DisablePlayerBody()
