@@ -1,18 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
+[RequireComponent(typeof(Button))]
 public class GameStateChanger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private States.GameState desiredGameState;
+
+    Button button;
+
+    private void Start()
     {
-        
+        button = GetComponent<Button>();
+
+        button.onClick.AddListener(ChangeGameState);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeGameState()
     {
-        
+        States.currentGameState = desiredGameState;
     }
 }

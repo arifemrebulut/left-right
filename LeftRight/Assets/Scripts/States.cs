@@ -1,6 +1,6 @@
 
 
-public class States
+public static class States
 {
     public enum GameState
     {
@@ -15,4 +15,7 @@ public class States
         Left,
         Right
     }
+
+    public static States.GameState currentGameState;
+    public static States.BallMovementState currentBallMovementState;
 }

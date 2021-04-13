@@ -25,12 +25,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (StateManager.currentGameState == States.GameState.OnStart)
+        if (States.currentGameState == States.GameState.OnStart)
         {
             PatrolOnStart();
         }
 
-        if (StateManager.currentGameState == States.GameState.OnPlay)
+        if (States.currentGameState == States.GameState.OnPlay)
         {
             UpMovement();
 
@@ -59,11 +59,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void SidewaysMovement()
     {
-        if (StateManager.currentBallMovementState == States.BallMovementState.Left)
+        if (States.currentBallMovementState == States.BallMovementState.Left)
         {
             MoveLeft();
         }
-        else if (StateManager.currentBallMovementState == States.BallMovementState.Right)
+        else if (States.currentBallMovementState == States.BallMovementState.Right)
         {
             MoveRight();
         }
