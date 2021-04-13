@@ -8,6 +8,17 @@ public class StateManager : MonoBehaviour
     public static States.BallMovementState currentBallMovementState { get; private set; }
 
 
+    #region Subscribe and Unsubscribe to events
+    private void OnEnable()
+    {
+        EventBroker.OnTapInPlay += ChangeBallMovementState;
+    }
+
+    private void OnDisable()
+    {
+        EventBroker.OnTapInPlay -= ChangeBallMovementState;
+    }
+    #endregion
 
     public void ChangeGameState(States.GameState desiredGameState)
     {
