@@ -15,6 +15,16 @@ public class PlayerMovement : MonoBehaviour
     private float[] patrolPoints;
     private float currentPatrolPoint;
 
+    private void OnEnable()
+    {
+        EventBroker.OnGameRestart += ResetPlayerPosition;
+    }
+
+    private void OnDisable()
+    {
+        EventBroker.OnGameRestart -= ResetPlayerPosition;
+    }
+
     private void Start()
     {
         patrolPoints = new float[2];
@@ -77,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
     private void MoveRight()
     {
         transform.Translate(Vector2.right * leftRightSpeed * Time.deltaTime);
+    }
+
+    private void ResetPlayerPosition()
+    {
+        transform.position = Vector3.zero;
     }
 }

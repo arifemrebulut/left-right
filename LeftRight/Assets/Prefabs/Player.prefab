@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991321966ad431e44978c3d75dd8114c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerBody: {fileID: 4561215497827795118}
 --- !u!114 &4561215497804829322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d965bd451ed322c43a80ebb4c06ed6c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDeathParticleEffect: {fileID: 4267352138563473070, guid: c4e68d68e862e4e478701c440666f18a, type: 3}
 --- !u!1 &4561215497827795118
 GameObject:
   m_ObjectHideFlags: 0

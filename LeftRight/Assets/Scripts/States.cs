@@ -16,6 +16,12 @@ public static class States
         Right
     }
 
-    public static States.GameState currentGameState;
-    public static States.BallMovementState currentBallMovementState;
+    public static GameState currentGameState;
+    public static BallMovementState currentBallMovementState;
+
+    public static void ResetStates()
+    {
+        currentGameState = GameState.OnStart;
+        currentBallMovementState = BallMovementState.Patrol;
+    }
 }

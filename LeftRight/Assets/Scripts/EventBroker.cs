@@ -5,6 +5,7 @@ public class EventBroker : MonoBehaviour
 {
     public static Action OnTapInPlay;
     public static Action OnPlayerDie;
+    public static Action OnGameRestart;
 
     public static void CallOnTapInPlay()
     {
@@ -14,5 +15,10 @@ public class EventBroker : MonoBehaviour
     public static void CallOnPlayerDie()
     {
         OnPlayerDie();
+    }
+
+    public static void CallOnGameRestart()
+    {
+        OnGameRestart();
     }
 }
