@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,6 +8,16 @@ public class CanvasManager : MonoBehaviour
     List<MenuController> menuControllerList;
 
     MenuController lastActiveMenu;
+
+    private void OnEnable()
+    {
+        EventBroker.OnPlayerDie += SwitchToGameOverScreen;
+    }
+
+    private void OnDisable()
+    {
+        EventBroker.OnPlayerDie -= SwitchToGameOverScreen;
+    }
 
     private void Awake()
     {
@@ -36,5 +47,17 @@ public class CanvasManager : MonoBehaviour
         {
             Debug.Log("Desired menu is not exist!");
         }
+    }
+
+    private void SwitchToGameOverScreen()
+    {
+        StartCoroutine(SwitchMenuCoroutine());
+    }
+
+    private IEnumerator SwitchMenuCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SwitchMenu(MenuType.GameOverScreen);
     }
 }
