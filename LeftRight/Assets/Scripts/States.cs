@@ -4,6 +4,7 @@ public static class States
 {
     public enum GameState
     {
+        OnMenu,
         OnStart,
         OnPlay,
         OnGameOver
