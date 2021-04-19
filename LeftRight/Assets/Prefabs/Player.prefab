@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7181074445710673055}
   - component: {fileID: 7181074445710673050}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,10 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f831227c4c15da148b74a4b3b5b11f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upMovementSpeed: 7
+  upMovementSpeed: 6
   leftRightSpeed: 10
   patrolBound: 2
-  patrolSpeed: 10
+  patrolSpeed: 7
 --- !u!114 &7181074445710673050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9bbb8c71b3ba50945940fa9aee193288, type: 3}
-  m_Color: {r: 0.16078432, g: 0.9490196, b: 0.8039216, a: 1}
+  m_Color: {r: 0.13553719, g: 0.8, b: 0.6776859, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -336,6 +336,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7181074445750621881}
     m_Modifications:
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: 6.283185
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.49810526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.6603774
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startRotation.minScalar
+      value: -6.283185
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startRotation.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243719357262808715, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8243719357262808716, guid: da824b4edef462241b28944ac37bfa0e, type: 3}
       propertyPath: m_Name
       value: PlayerSparksParticleEffect
@@ -440,6 +488,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1289214387266042321, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: TrailModule.dieWithParticles
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: TrailModule.widthOverTrail.scalar
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.7133521
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.8396226
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.15366672
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.b
+      value: 0.7137255
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.g
+      value: 0.84313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key0.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.g
+      value: 0.8362675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289214387266042322, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.key1.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1289214387266042332, guid: b69e11a0600009f4295b0d5c37b86858, type: 3}
