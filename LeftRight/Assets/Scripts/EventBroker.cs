@@ -7,6 +7,10 @@ public class EventBroker : MonoBehaviour
     public static Action OnPlayerDie;
     public static Action OnGameRestart;
 
+    // Events for creating and destroying level prefabs
+    public static Action<GameObject> OnCreaterLevelEndPoint;
+    public static Action<GameObject> OnDestroyerLevelEndPoint;
+
     public static void CallOnTapInPlay()
     {
         OnTapInPlay();
@@ -20,5 +24,15 @@ public class EventBroker : MonoBehaviour
     public static void CallOnGameRestart()
     {
         OnGameRestart();
+    }
+
+    public static void CallOnCreaterLevelEndPoint(GameObject collidedLevel)
+    {
+        OnCreaterLevelEndPoint(collidedLevel);
+    }
+
+    public static void CallOnDestroyerLevelEndPoint(GameObject collidedLevel)
+    {
+        OnDestroyerLevelEndPoint(collidedLevel);
     }
 }
