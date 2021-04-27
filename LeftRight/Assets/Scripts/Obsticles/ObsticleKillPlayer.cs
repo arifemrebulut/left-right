@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class KillPlayer : MonoBehaviour
+public class ObsticleKillPlayer : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
