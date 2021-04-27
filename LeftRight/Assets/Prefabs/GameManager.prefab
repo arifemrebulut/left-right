@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d41046ea63a11d54ebc334d5d6421eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  startingPoint: {fileID: 0}
+  levels: []

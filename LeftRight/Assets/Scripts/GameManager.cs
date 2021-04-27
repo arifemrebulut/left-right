@@ -6,7 +6,6 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject startingPoint;
     [SerializeField] private List<GameObject> levels;
-    [SerializeField] private Transform levelsParent;
 
     private GameObject currentLevel, nextLevel;
     private List<GameObject> instatiatedLevels;
