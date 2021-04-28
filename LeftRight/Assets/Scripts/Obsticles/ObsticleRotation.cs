@@ -52,6 +52,6 @@ public class ObsticleRotation : MonoBehaviour
 
     private void RotateObsticle()
     {
-        transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+        transform.Rotate(transform.forward * rotationSpeed * Time.deltaTime, Space.Self);
     }
 }
