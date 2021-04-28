@@ -1161,6 +1161,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8896623314739872269}
     m_Modifications:
+    - target: {fileID: 3140349227709830490, guid: 84c33f5d8cc94ee4498e25ebe214fe09, type: 3}
+      propertyPath: randomSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140349227709830490, guid: 84c33f5d8cc94ee4498e25ebe214fe09, type: 3}
+      propertyPath: randomSpeedMax
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140349227709830490, guid: 84c33f5d8cc94ee4498e25ebe214fe09, type: 3}
+      propertyPath: randomSpeedMin
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 6324477856241646777, guid: 84c33f5d8cc94ee4498e25ebe214fe09, type: 3}
       propertyPath: m_Name
       value: Saw10
@@ -1294,6 +1306,18 @@ PrefabInstance:
     - target: {fileID: 2738589856754255535, guid: 45d659ebb60b30a41bb14624ee24c8d8, type: 3}
       propertyPath: m_Name
       value: Saw8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6972807167440165320, guid: 45d659ebb60b30a41bb14624ee24c8d8, type: 3}
+      propertyPath: randomSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6972807167440165320, guid: 45d659ebb60b30a41bb14624ee24c8d8, type: 3}
+      propertyPath: randomSpeedMax
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6972807167440165320, guid: 45d659ebb60b30a41bb14624ee24c8d8, type: 3}
+      propertyPath: randomSpeedMin
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45d659ebb60b30a41bb14624ee24c8d8, type: 3}

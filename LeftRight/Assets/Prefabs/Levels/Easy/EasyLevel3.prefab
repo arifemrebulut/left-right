@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &5258285616905634780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2229853362009782973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e6f5bc2cc516643bce20a2927dee50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3822979853670261680
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,18 +122,6 @@ Transform:
   m_Father: {fileID: 5550010205269634016}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &120265580943118215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7581345775218713907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e6f5bc2cc516643bce20a2927dee50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &9058737900398729097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,13 +1379,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw1
       objectReference: {fileID: 0}
+    - target: {fileID: 3043329103303871601, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
+      propertyPath: randomSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043329103303871601, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
+      propertyPath: randomSpeedMax
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043329103303871601, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
+      propertyPath: randomSpeedMin
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
---- !u!1 &2229853362009782973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 831625863840695133, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
-  m_PrefabInstance: {fileID: 1547127762191202784}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2229853362009782971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 831625863840695131, guid: a684d5cc6578566438281b65e1b16dfe, type: 3}
@@ -1422,6 +1405,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6600641356940121286}
     m_Modifications:
+    - target: {fileID: 2948096836298539291, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
+      propertyPath: randomSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948096836298539291, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
+      propertyPath: randomSpeedMax
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2948096836298539291, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
+      propertyPath: randomSpeedMin
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 5909174736925909318, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
       propertyPath: m_Name
       value: Saw2
@@ -1484,11 +1479,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
---- !u!1 &7581345775218713907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5909174736925909318, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
-  m_PrefabInstance: {fileID: 4267093361665475701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7581345775218713869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5909174736925909368, guid: 43255492d907ed7409cb5a43dd9688f3, type: 3}
