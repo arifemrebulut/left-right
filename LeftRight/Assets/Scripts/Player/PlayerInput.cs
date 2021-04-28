@@ -11,6 +11,8 @@ public class PlayerInput : MonoBehaviour
 
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && States.currentGameState == States.GameState.OnPlay)
         {
+            EventBroker.CallOnTapInPlay();
+
             if (States.currentBallMovementState == States.BallMovementState.Patrol)
             {
                 States.currentBallMovementState = (States.BallMovementState)Random.Range(1, 3);
