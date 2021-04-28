@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1471299239, guid: ff8863123f907c6438066ec5cfe03a51, type: 3}
+      propertyPath: playerDeathSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1471299239, guid: ff8863123f907c6438066ec5cfe03a51, type: 3}
+      propertyPath: playerDeathSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8921d1e6ff390e048a78aaadb89630de, type: 3}
+    - target: {fileID: 1471299239, guid: ff8863123f907c6438066ec5cfe03a51, type: 3}
+      propertyPath: playerDeathSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd9e6ef984afc2345abe55c92d1b4aed, type: 3}
+    - target: {fileID: 1471299239, guid: ff8863123f907c6438066ec5cfe03a51, type: 3}
+      propertyPath: playerDeathSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3eaf78d80002d154caca8abd9998e60c, type: 3}
     - target: {fileID: 7181074445710673025, guid: ff8863123f907c6438066ec5cfe03a51, type: 3}
       propertyPath: m_Name
       value: Player
