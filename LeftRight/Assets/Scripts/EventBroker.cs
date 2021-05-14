@@ -23,7 +23,6 @@ public class EventBroker : MonoBehaviour
 
     public static void CallOnGameRestart()
     {
-        Debug.Log("RestartGame");
         OnGameRestart();
     }
 
